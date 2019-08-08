@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Hello from './Hello'
-import Clock from './Clock'
+import Hello from './Hello';
+import Clock from './Clock';
+import LikeButton from './LikeButton';
 
 //React 推荐使用内联样式
 var myStyle = { fontSize: 50, color: '#FF0000' };
@@ -14,9 +15,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         {/*这是注释,插入自定义组件*/}
         <Hello nickname="菜鸟" />
-        <Clock></Clock>
+        <Clock />
+        <LikeButton></LikeButton>
         <p>
-          <span style = {myStyle}>{1+4}</span>
+          <span style={myStyle}>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
