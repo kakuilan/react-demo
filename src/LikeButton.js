@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 class LikeButton extends Component {
   //构造函数
   constructor(props) {
+    //要使用this.必须先调用父类
     super(props);
     //初始化state的值
     this.state = { liked: false };
@@ -13,6 +14,7 @@ class LikeButton extends Component {
   handleClick(e) {
     this.setState({ liked: !this.state.liked });
   }
+
 
   //必须,组装生成这个组件的 HTML 结构
   render() {

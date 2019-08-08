@@ -4,6 +4,7 @@ import './App.css';
 import Hello from './Hello';
 import Clock from './Clock';
 import LikeButton from './LikeButton';
+import MyInput from './MyInput';
 
 //React 推荐使用内联样式
 var myStyle = { fontSize: 50, color: '#FF0000' };
@@ -16,7 +17,8 @@ function App() {
         {/*这是注释,插入自定义组件*/}
         <Hello nickname="菜鸟" />
         <Clock />
-        <LikeButton></LikeButton>
+        <LikeButton />
+        <MyInput />
         <p>
           <span style={myStyle}>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.
