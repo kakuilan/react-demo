@@ -6,16 +6,17 @@ import Clock from './Clock';
 import LikeButton from './LikeButton';
 import MyInput from './MyInput';
 import Multili from './Multili';
+import Multiol from './Multiol';
 
 //React 推荐使用内联样式
 var myStyle = { fontSize: 50, color: '#FF0000' };
 
 function App() {
   const titles = [
-    { title: 'hello world 1111' },
-    { title: 'hello world 2222' },
-    { title: 'hello world 3333' },
-    { title: 'hello world 4444' }
+    { id: 1, title: 'hello world 1111' },
+    { id: 2, title: 'hello world 2222' },
+    { id: 3, title: 'hello world 3333' },
+    { id: 4, title: 'hello world 4444' }
   ];
 
   return (
@@ -30,6 +31,7 @@ function App() {
 
         {/**传入results属性值 */}
         <Multili results={titles} />
+        <Multiol results={titles} />
         <p>
           <span style={myStyle}>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.
