@@ -8,6 +8,7 @@ import MyInput from './MyInput';
 import Multili from './Multili';
 import Multiol from './Multiol';
 import Users from './Users';
+import LoginControl from './LoginControl';
 
 //React 推荐使用内联样式
 var myStyle = { fontSize: 50, color: '#FF0000' };
@@ -33,8 +34,8 @@ function App() {
         {/**传入results属性值 */}
         <Multili results={titles} />
         <Multiol results={titles} />
-        <Users></Users>
-
+        <Users />
+        <LoginControl />
         <p>
           <span style={myStyle}>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.

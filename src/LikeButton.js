@@ -23,6 +23,7 @@ class LikeButton extends Component {
     this.setState({ liked: !this.state.liked });
 
     //使用redux
+    //如果省略bindActionCreators()函数，默认直接把 dispatch 作为 props 传入
     const { dispatch } = this.props;
     const action = {
       type: actionTypes.ADD_TEST,
