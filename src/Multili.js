@@ -11,7 +11,7 @@ class Multili extends Component {
     return (
       <ul>
         {this.props.results.map(result => {
-          return <ListItemWrapper key={result.id} data={result} />;
+          return <ListItemWrapper key={"mli_"+result.id} data={result} />;
         })}
       </ul>
     );

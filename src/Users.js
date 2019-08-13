@@ -11,10 +11,11 @@ const users = [
 class Users extends Component {
   render() {
     const usersElements = []; // 保存每个用户渲染以后 JSX 的数组
+    var i = 0;
     for (let user of users) {
       usersElements.push(
         // 循环每个用户，构建 JSX，push 到数组中
-        <div>
+        <div key={i++}>
           <div>姓名：{user.username}</div>
           <div>年龄：{user.age}</div>
           <div>性别：{user.gender}</div>
