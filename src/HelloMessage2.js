@@ -8,9 +8,9 @@ class Content extends React.Component {
     return (
       <div>
         <input
+          onChange={this.props.updateStateProp}
           type="text"
           value={this.props.myDataProp}
-          onChange={this.props.updateStateProp}
         />
         <h4>{this.props.myDataProp}</h4>
       </div>
@@ -21,19 +21,21 @@ class Content extends React.Component {
 class HelloMessage2 extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: 'Hello 菜鸟!' };
+    this.state = { value: 'Hello 菜鸟!', };
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    this.setState({ value: event.target.value });
+    this.setState({ value: event.target.value, });
   }
   render() {
-    var value = this.state.value;
+    const {value,} = this.state;
     return (
       <div>
         //在父组件通过创建事件句柄 (handleChange) ，并作为 prop(updateStateProp) 传递到你的子组件上
-        <Content myDataProp={value} updateStateProp={this.handleChange} />
+        <Content myDataProp={value}
+          updateStateProp={this.handleChange}
+        />
       </div>
     );
   }

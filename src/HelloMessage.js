@@ -4,19 +4,22 @@ import React from 'react';
 class HelloMessage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: 'Hello World!' };
+    this.state = { value: 'Hello World!', };
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
     //event.target即事件发生的元素
-    this.setState({ value: event.target.value });
+    this.setState({ value: event.target.value, });
   }
   render() {
-    var value = this.state.value;
+    const {value,} = this.state;
     return (
       <div>
-        <input type="text" value={value} onChange={this.handleChange} />
+        <input onChange={this.handleChange}
+          type="text"
+          value={value}
+        />
         <h4>{value}</h4>
       </div>
     );

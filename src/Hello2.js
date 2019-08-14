@@ -2,33 +2,33 @@
 import React from 'react';
 
 class Hello2 extends React.Component {
- 
+
   constructor(props) {
-      super(props);
-      this.state = {opacity: 1.0};
+    super(props);
+    this.state = {opacity: 1.0,};
   }
- 
+
   //在第一次渲染后调用
   componentDidMount() {
     this.timer = setInterval(function () {
-      var opacity = this.state.opacity;
+      let {opacity,} = this.state;
       opacity -= .05;
       if (opacity < 0.1) {
         opacity = 1.0;
       }
       this.setState({
-        opacity: opacity
+        opacity: opacity,
       });
     }.bind(this), 100);
   }
- 
+
   render () {
     return (
-      <div style={{opacity: this.state.opacity}}>
+      <div style={{opacity: this.state.opacity,}}>
         Hello {this.props.name}
       </div>
     );
   }
 }
- 
-export default Hello2
+
+export default Hello2;

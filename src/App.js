@@ -14,22 +14,26 @@ import Button from './Button';
 import UserGist from './UserGist';
 import HelloMessage from './HelloMessage';
 import HelloMessage2 from './HelloMessage2';
+import FlavorForm from './FlavorForm';
 
 //React 推荐使用内联样式
-var myStyle = { fontSize: 50, color: '#FF0000' };
+const myStyle = { fontSize: 50, color: '#FF0000', };
 
 function App() {
   const titles = [
-    { id: 1, title: 'hello world 1111' },
-    { id: 2, title: 'hello world 2222' },
-    { id: 3, title: 'hello world 3333' },
-    { id: 4, title: 'hello world 4444' }
+    { id: 1, title: 'hello world 1111', },
+    { id: 2, title: 'hello world 2222', },
+    { id: 3, title: 'hello world 3333', },
+    { id: 4, title: 'hello world 4444', },
   ];
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img alt="logo"
+          className="App-logo"
+          src={logo}
+        />
         {/*这是注释,插入自定义组件*/}
         <Hello nickname="菜鸟" />
         <Clock />
@@ -45,8 +49,9 @@ function App() {
         <div>
           <Button />
           <UserGist source="https://api.github.com/users/octocat/gists" />
-          <HelloMessage></HelloMessage>
-          <HelloMessage2></HelloMessage2>
+          <HelloMessage />
+          <HelloMessage2 />
+          <FlavorForm />
         </div>
         <p>
           <span style={myStyle}>{1 + 4}</span>
@@ -55,8 +60,8 @@ function App() {
         <a
           className="App-link"
           href="https://reactjs.org"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
         >
           Learn React
         </a>
