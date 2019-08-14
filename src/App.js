@@ -10,6 +10,7 @@ import Multili from './Multili';
 import Multiol from './Multiol';
 import Users from './Users';
 import LoginControl from './LoginControl';
+import Button from './Button';
 
 //React 推荐使用内联样式
 var myStyle = { fontSize: 50, color: '#FF0000' };
@@ -37,7 +38,10 @@ function App() {
         <Multiol results={titles} />
         <Users />
         <LoginControl />
-        <Hello2 name="world !!"></Hello2>
+        <Hello2 name="world !!" />
+        <div>
+          <Button />
+        </div>
         <p>
           <span style={myStyle}>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.

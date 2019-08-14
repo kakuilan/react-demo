@@ -1,5 +1,5 @@
 //组件的生命周期
-import React from 'react'
+import React from 'react';
 
 class Hello2 extends React.Component {
  
