@@ -4,7 +4,7 @@ import React from 'react';
 class UserGist extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { username: '', lastGistUrl: '' };
+    this.state = { username: '', lastGistUrl: '', };
   }
 
   componentDidMount() {
@@ -13,10 +13,10 @@ class UserGist extends React.Component {
       .then(res => res.json())
       .then(
         result => {
-          var lastGist = result[0];
+          const lastGist = result[0];
           this.setState({
             username: lastGist.owner.login,
-            lastGistUrl: lastGist.html_url
+            lastGistUrl: lastGist.html_url,
           });
         },
         // 注意：需要在此处处理错误
@@ -25,7 +25,7 @@ class UserGist extends React.Component {
         error => {
           this.setState({
             isLoaded: true,
-            error
+            error,
           });
         }
       );
@@ -39,7 +39,9 @@ class UserGist extends React.Component {
     return (
       <div>
         {this.state.username} 用户最新的 Gist 共享地址：
-        <a href={this.state.lastGistUrl} target="_blank">{this.state.lastGistUrl}</a>
+        <a href={this.state.lastGistUrl}
+          target="_blank"
+        >{this.state.lastGistUrl}</a>
       </div>
     );
   }

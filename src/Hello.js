@@ -3,12 +3,12 @@ import React from 'react';
 import Person from './Person';
 
 function Hello(props) {
-  var someone = {
+  const someone = {
     name: '张三',
     sex: '先生',
     age: '25',
     addr: '海南',
-    tel: '13812345678'
+    tel: '13812345678',
   };
   return (
     <div>

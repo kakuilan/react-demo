@@ -1,18 +1,18 @@
 //遍历用法
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 
 const users = [
-  { username: 'Jerry', age: 21, gender: 'male' },
-  { username: 'Tomy', age: 22, gender: 'male' },
-  { username: 'Lily', age: 19, gender: 'female' },
-  { username: 'Lucy', age: 20, gender: 'female' }
+  { username: 'Jerry', age: 21, gender: 'male', },
+  { username: 'Tomy', age: 22, gender: 'male', },
+  { username: 'Lily', age: 19, gender: 'female', },
+  { username: 'Lucy', age: 20, gender: 'female', },
 ];
 
 class Users extends Component {
   render() {
     const usersElements = []; // 保存每个用户渲染以后 JSX 的数组
-    var i = 0;
-    for (let user of users) {
+    let i = 0;
+    for (const user of users) {
       usersElements.push(
         // 循环每个用户，构建 JSX，push 到数组中
         <div key={i++}>

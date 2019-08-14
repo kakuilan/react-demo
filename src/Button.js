@@ -4,12 +4,12 @@ import React from 'react';
 class Button extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: 0 };
+    this.state = { data: 0, };
     this.setNewNumber = this.setNewNumber.bind(this);
   }
 
   setNewNumber() {
-    this.setState({ data: this.state.data + 1 });
+    this.setState({ data: this.state.data + 1, });
   }
   render() {
     return (

@@ -1,6 +1,6 @@
 //ul元素遍历
 
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 
 class Multili extends Component {
 
@@ -11,7 +11,9 @@ class Multili extends Component {
     return (
       <ul>
         {this.props.results.map(result => {
-          return <ListItemWrapper key={"mli_"+result.id} data={result} />;
+          return <ListItemWrapper data={result}
+            key={'mli_'+result.id}
+                 />;
         })}
       </ul>
     );
