@@ -11,6 +11,7 @@ import Multiol from './Multiol';
 import Users from './Users';
 import LoginControl from './LoginControl';
 import Button from './Button';
+import UserGist from './UserGist';
 
 //React 推荐使用内联样式
 var myStyle = { fontSize: 50, color: '#FF0000' };
@@ -41,6 +42,7 @@ function App() {
         <Hello2 name="world !!" />
         <div>
           <Button />
+          <UserGist source="https://api.github.com/users/octocat/gists" />
         </div>
         <p>
           <span style={myStyle}>{1 + 4}</span>
