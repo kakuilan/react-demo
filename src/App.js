@@ -13,6 +13,7 @@ import LoginControl from './LoginControl';
 import Button from './Button';
 import UserGist from './UserGist';
 import HelloMessage from './HelloMessage';
+import HelloMessage2 from './HelloMessage2';
 
 //React 推荐使用内联样式
 var myStyle = { fontSize: 50, color: '#FF0000' };
@@ -45,6 +46,7 @@ function App() {
           <Button />
           <UserGist source="https://api.github.com/users/octocat/gists" />
           <HelloMessage></HelloMessage>
+          <HelloMessage2></HelloMessage2>
         </div>
         <p>
           <span style={myStyle}>{1 + 4}</span>
