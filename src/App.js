@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello';
+import Hello2 from './Hello2';
 import Clock from './Clock';
 import LikeButton from './LikeButton';
 import MyInput from './MyInput';
@@ -36,6 +37,7 @@ function App() {
         <Multiol results={titles} />
         <Users />
         <LoginControl />
+        <Hello2 name="world !!"></Hello2>
         <p>
           <span style={myStyle}>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.
