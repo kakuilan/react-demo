@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
+import RouterBase from './RouterBase';
 import './App.css';
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">
@@ -12,6 +12,7 @@ function App() {
           src={logo}
         />
         {/*这是注释,插入自定义组件*/}
+        <RouterBase></RouterBase>
         <p>
           <span>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.
