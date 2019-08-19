@@ -67,7 +67,9 @@ function Topics({ match, }) {
         </li>
       </ul>
 
+      {/**二级路由 */}
       <Route component={Topic}
+      {/**这里定义了一个参数topicId */}
         path={`${match.path}/:topicId`}
       />
       <Route
@@ -82,6 +84,7 @@ function Topics({ match, }) {
 function Topic({ match, }) {
   return (
     <div>
+    {/* 获取上面定义的参数topicId */}
       <h3>{match.params.topicId}</h3>
     </div>
   );
