@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import RouterBase from './RouterBase';
 import RouterParams from './RouterParams';
+import RouterRedirect from './RouterRedirect';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         {/*这是注释,插入自定义组件*/}
         <RouterBase />
         <RouterParams />
+        <RouterRedirect />
         <p>
           <span>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.
