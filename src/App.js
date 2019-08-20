@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import RouterBase from './RouterBase';
 import RouterParams from './RouterParams';
 import RouterRedirect from './RouterRedirect';
+import RouterCustomLink from './RouterCustomLink';
 import './App.css';
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
         <RouterBase />
         <RouterParams />
         <RouterRedirect />
+        <hr></hr>
+        <RouterCustomLink />
         <p>
           <span>{1 + 4}</span>
           Edit <code>src/App.js</code> and save to reload.
